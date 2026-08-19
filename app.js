@@ -13,5 +13,6 @@ app.use("/hotels", hotelRoutes);
 app.use("/users", userRoutes);
 app.use("/rooms", roomRoutes);
 app.use("/bookings", bookingRoutes);
+app.use("/auth", )
 
 module.exports = app;
