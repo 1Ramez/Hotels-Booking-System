@@ -34,7 +34,7 @@ async function getHotels(req, res) {
         if (currLimit < 1) currLimit = 10;
 
         let hotels = await Hotel.find(query)
-            .sort(sort || "")
+            .sort(sort || "name")
             .skip((currPage - 1) * currLimit)
             .limit(currLimit);
 

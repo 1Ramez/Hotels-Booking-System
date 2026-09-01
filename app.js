@@ -5,6 +5,7 @@ const hotelRoutes = require("./routes/hotelRoutes.js");
 const userRoutes = require("./routes/userRoutes.js");
 const roomRoutes = require("./routes/roomRoutes.js");
 const bookingRoutes = require("./routes/bookingRoutes.js");
+const authRoutes = require("./routes/authRoutes.js")
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -13,6 +14,6 @@ app.use("/hotels", hotelRoutes);
 app.use("/users", userRoutes);
 app.use("/rooms", roomRoutes);
 app.use("/bookings", bookingRoutes);
-app.use("/auth", )
+app.use("/auth", authRoutes);
 
 module.exports = app;
