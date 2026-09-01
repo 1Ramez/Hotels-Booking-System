@@ -19,3 +19,6 @@ Thumbs.db
 
 # Editor/IDE
 .vscode/
+
+# DB Insertions
+insertions.mongodb.js
